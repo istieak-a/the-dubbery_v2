@@ -1,0 +1,13 @@
+.section_1 {
+    background: url(../../assets/patternpad.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.section_2 ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    /* justify-content: center; */
+}

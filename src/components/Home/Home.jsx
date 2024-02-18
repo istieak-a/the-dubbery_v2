@@ -10,6 +10,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
 import mrBeast from "../../assets/mr_beast.jpg";
 import Button from "../Button/Button";
+import Reviews from "../Sections/Reviews";
 
 const Home = () => {
   const serviceData = [
@@ -64,6 +65,7 @@ const Home = () => {
       desc: "Japanese-American comedian, actor, and YouTube personality known for his skits and parodies.",
     },
   ];
+
   return (
     <div>
       <section className="section_1 flex w-full flex-col items-center justify-center py-20 text-center text-white 2xl:py-36">
@@ -179,7 +181,7 @@ const Home = () => {
           <img className="h-full w-full" src={dubbing_mic} alt="" />
         </div>
       </section>
-      <section className="flex min-h-screen flex-col gap-10 items-center bg-bg100 px-10 py-20 md:px-20">
+      <section className="flex min-h-screen flex-col items-center gap-10 bg-bg100 px-10 py-20 md:px-20">
         <div className="portfolio-title-section flex w-full flex-col items-center rounded-md py-10 text-center text-white">
           <h2 className="text-xs font-semibold">PORTFOLIO</h2>
           <h1 className="text-4xl font-bold md:text-5xl">Cerators Go Global</h1>
@@ -198,6 +200,9 @@ const Home = () => {
           ))}
         </div>
         <Button>View All</Button>
+      </section>
+      <section className="py-10">
+        <Reviews />
       </section>
     </div>
   );

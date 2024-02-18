@@ -4,6 +4,21 @@ import avatar from "../../assets/avatar.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { GrFormNext } from "react-icons/gr";
+import { GrFormPrevious } from "react-icons/gr";
+
+const NextArrow = ({ onClick }) => (
+    <div className="next-arrow bg-gray-200 rounded-full cursor-pointer" onClick={onClick} style={{ right: "40px", position: "absolute", top: "50%" }}>
+        <GrFormNext className="text-4xl" />
+    </div>
+);
+
+const PrevArrow = ({ onClick }) => (
+    <div className="prev-arrow bg-gray-200 rounded-full cursor-pointer" onClick={onClick} style={{ left: "40px", position: "absolute", top: "50%" }}>
+        <GrFormPrevious className="text-4xl" />
+    </div>
+);
+
 const Reviews = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -37,6 +52,7 @@ const Reviews = () => {
       desc: "The Gaming Bros",
     },
   ];
+
   const settings = {
     dots: true,
     infinite: true,
@@ -44,7 +60,10 @@ const Reviews = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     beforeChange: (current, next) => setActiveIndex(next),
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
+
   return (
     <div className="reviews-carousel">
       <Slider {...settings}>
@@ -52,10 +71,6 @@ const Reviews = () => {
           <ReviewCard key={review.id} {...review} />
         ))}
       </Slider>
-
-      <button className="bg-blue-500 px-5 py-3 rounded-xl mr-5" onClick={() => setActiveIndex((index) => index - 1)}>Prev</button>
-
-      <button className="bg-blue-500 px-5 py-3 rounded-xl mr-5" onClick={() => setActiveIndex((index) => index + 1)}>Next</button>
     </div>
   );
 };

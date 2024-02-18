@@ -11,6 +11,8 @@ import PortfolioCard from "../PortfolioCard/PortfolioCard";
 import mrBeast from "../../assets/mr_beast.jpg";
 import Button from "../Button/Button";
 import Reviews from "../Sections/Reviews";
+import InviteSection from "../Sections/InviteSection";
+import ContactForm from "../Sections/ContactForm";
 
 const Home = () => {
   const serviceData = [
@@ -201,8 +203,14 @@ const Home = () => {
         </div>
         <Button>View All</Button>
       </section>
-      <section className="py-10">
+      <section className="py-20">
         <Reviews />
+      </section>
+      <section className="py-20 bg-bg100">
+        <InviteSection />
+      </section>
+      <section className="py-10 px-10 bg-bg200">
+        <ContactForm />
       </section>
     </div>
   );

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./home.css";
 import { BiCaretRight } from "react-icons/bi";
 import ButtonAccent from "../Button/ButtonAccent";
-import dubbing_mic from "../../assets/dubbing_mic.jpg";
+import dubbing_mic from "../../assets/dubbing_mic2.png";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import { RiArrowRightSLine } from "react-icons/ri";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";

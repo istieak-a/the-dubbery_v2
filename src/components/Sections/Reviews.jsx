@@ -62,6 +62,8 @@ const Reviews = () => {
     beforeChange: (current, next) => setActiveIndex(next),
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 2000, // Change slides every 2 seconds
   };
 
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import distribution from "../../assets/distribution.png";
 import mrBeast from "../../assets/mr_beast.jpg";
+import Faq from "../Sections/Faq";
 
 
 const Services = () => {
@@ -82,14 +83,14 @@ const Services = () => {
         </div>
       </section>
       <section className="flex w-full flex-col gap-20 px-10 py-20 md:px-16">
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row">
           <div>
             <h3 className="text-info text-xs font-semibold">Empower</h3>
-            <h1 className="text-info text-4xl font-bold">
+            <h1 className="text-info text-3xl md:text-4xl font-bold">
               Unlock Your Content's <br /> Global Potential
             </h1>
           </div>
-          <p className="w-1/2 text-justify text-sm">
+          <p className="w-full md:w-1/2 text-justify text-sm">
             Our agency offers a range of additional services to help creators
             reach a global audience. In addition to our dubbing service, we also
             specialize in creating short videos and distributing content across
@@ -171,8 +172,8 @@ const Services = () => {
           <img className="h-full w-full object-cover hover:scale-110 duration-300" src={mrBeast} alt="picture" />
         </div>
       </section>
-      <section>
-        
+      <section className="px-10 md:px-16 py-20">
+        <Faq />
       </section>
     </div>
   );

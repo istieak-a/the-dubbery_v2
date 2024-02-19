@@ -140,7 +140,7 @@ const Header = () => {
                     <NavItem
                       setNavToggle={setNavToggle}
                       title={item.title}
-                      to={item.link}
+                      link={item.link}
                     />
                   </div>
                 ))}

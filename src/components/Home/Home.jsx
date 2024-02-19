@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import "./home.css";
 import { BiCaretRight } from "react-icons/bi";
 import ButtonAccent from "../Button/ButtonAccent";
-import dubbing_mic from "../../assets/dubbing_mic2.png";
+// import dubbing_mic from "../../assets/dubbing_mic2.png";
+import dubbing_mic from "../../assets/dubbing_mic2.png"
 import ServiceCard from "../ServiceCard/ServiceCard";
 import { RiArrowRightSLine } from "react-icons/ri";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
@@ -90,9 +91,9 @@ const Home = () => {
           </motion.button>
         </Link>
       </section>
-      <section className="section_2 flex w-full flex-col items-center justify-center gap-10 bg-bg100 px-10 py-20 text-text100 md:flex-row md:px-[8vw]">
+      <section className="section_2 flex w-full flex-col items-center justify-center gap-10 bg-neutral px-10 py-20 text-text100 md:flex-row md:px-[8vw]">
         <div className="flex w-full flex-col items-start gap-5 md:w-[70%]">
-          <h1 className="text-2xl font-bold text-accent200 md:text-4xl 2xl:text-5xl ">
+          <h1 className="text-2xl font-bold text-info md:text-4xl 2xl:text-5xl ">
             Empower Your Content with <br /> Our Unique Dubbing Service
           </h1>
           <p className="pe-0 text-justify text-sm font-medium md:pe-20">
@@ -115,15 +116,16 @@ const Home = () => {
               <p>Wide Platform Distribution</p>
             </li>
           </ul>
-          <ButtonAccent>Learn More</ButtonAccent>
+          <button className="btn btn-primary">Learn More</button>
+          {/* <ButtonAccent>Learn More</ButtonAccent> */}
         </div>
         <div className="flex w-full cursor-pointer  items-center justify-center  overflow-hidden rounded-2xl bg-bg100 transition-all duration-300 hover:scale-105 md:w-1/2">
           <img className="h-full w-full" src={dubbing_mic} alt="" />
         </div>
       </section>
-      <section className="flex flex-col gap-20 bg-bg100 px-10 py-20 md:px-[8vw]">
+      <section className="flex flex-col gap-20 bg-neutral px-10 py-20 md:px-[8vw]">
         <div className="flex flex-col justify-between gap-5 md:flex-row">
-          <h1 className="w-[100%] text-3xl font-bold text-accent200">
+          <h1 className="w-[100%] text-3xl font-bold text-info">
             Professional Dubbing Services for Global Audience
           </h1>
           <p className="w-[80%] text-sm">
@@ -143,10 +145,10 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <section className="section_2 flex w-full flex-col items-center justify-center gap-10 bg-bg100 px-10 py-20 text-text100 md:flex-row md:px-[8vw]">
+      <section className="section_2 flex w-full flex-col items-center justify-center gap-10 bg-neutral px-10 py-20 text-text100 md:flex-row md:px-[8vw]">
         <div className="flex w-full flex-col items-start gap-5 md:w-[70%]">
           <h2 className="text-sm font-bold">Empower</h2>
-          <h1 className="text-2xl font-bold text-accent200 md:text-4xl 2xl:text-5xl ">
+          <h1 className="text-2xl font-bold text-info md:text-4xl 2xl:text-5xl ">
             Unlock Your Earning Potential with Ad Revenue Sharing
           </h1>
           <p className="pe-0 text-justify text-sm font-medium md:pe-20">
@@ -171,10 +173,10 @@ const Home = () => {
             </li>
           </ul>
           <div className="flex gap-4">
-            <button className="rounded-xl border-2 border-accent100 px-5 py-2 text-sm font-semibold">
+            <button className="btn btn-primary">
               Learn More
             </button>
-            <button className="flex items-center gap-2">
+            <button className="btn btn-outline btn-primary">
               Sign Up <RiArrowRightSLine />
             </button>
           </div>
@@ -206,7 +208,7 @@ const Home = () => {
       <section className="py-20">
         <Reviews />
       </section>
-      <section className="py-20 bg-bg100">
+      <section className="py-20 bg-neutral">
         <InviteSection />
       </section>
       <section className="py-10 px-10 bg-bg200">

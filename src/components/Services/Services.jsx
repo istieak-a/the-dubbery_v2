@@ -2,6 +2,7 @@ import React from "react";
 import distribution from "../../assets/distribution.png";
 import mrBeast from "../../assets/mr_beast.jpg";
 
+
 const Services = () => {
   const serviceData = [
     {
@@ -63,7 +64,7 @@ const Services = () => {
           {serviceData.map((service, index) => (
             <div
               key={index}
-              className="flex cursor-pointer flex-col items-center gap-3 rounded-xl border bg-primary100 px-5 py-8 text-white shadow-xl duration-300 hover:scale-105 hover:bg-primary200"
+              className="bg-secondary hover:bg-info flex cursor-pointer flex-col items-center gap-3 rounded-xl border px-5 py-8 text-white shadow-xl duration-300 hover:scale-105"
             >
               <img
                 className="h-16 w-16 md:h-24 md:w-24"
@@ -75,20 +76,16 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div>
-          <button className="mr-4 rounded border-2 border-transparent bg-blue-500 px-4 py-2 text-white hover:bg-blue-700">
-            Learn More
-          </button>
-          <button className="rounded border-2 border-blue-500 px-4 py-2 text-blue-500 hover:bg-blue-500 hover:text-white">
-            Sign Up
-          </button>
+        <div className="flex gap-3">
+          <button className="btn btn-primary">Learn More</button>
+          <button className="btn btn-primary btn-outline px-6">Sign Up</button>
         </div>
       </section>
-      <section className="w-full px-10 py-20 md:px-16 flex flex-col gap-20">
+      <section className="flex w-full flex-col gap-20 px-10 py-20 md:px-16">
         <div className="flex justify-between">
           <div>
-            <h3 className="text-xs font-semibold">Empower</h3>
-            <h1 className="text-4xl font-bold">
+            <h3 className="text-info text-xs font-semibold">Empower</h3>
+            <h1 className="text-info text-4xl font-bold">
               Unlock Your Content's <br /> Global Potential
             </h1>
           </div>
@@ -101,26 +98,81 @@ const Services = () => {
           </p>
         </div>
 
-        <div className=" grid grid-cols-1 gap-10 md:grid-cols-3">
-          {serviceData2.map((service, index) => (
-            <div
-              key={index}
-              className="flex cursor-pointer flex-col items-center gap-3 rounded-xl border shadow-xl duration-300 hover:scale-105 hover:bg-primary200 hover:text-white"
-            >
-              <img
-                className="md:h-2/1 h-2/5 w-full rounded-t-xl object-cover"
-                src={service.img}
-                alt="card-icon"
-              />
-              <div className="px-6">
-                <h1 className="mt-5 text-2xl font-bold">{service.title}</h1>
-                <p className="text-md mt-2 line-clamp-3 text-justify">
-                  {service.desc}
-                </p>
+        <div className="flex flex-col gap-10">
+          <div className=" grid grid-cols-1 gap-10 md:grid-cols-3">
+            {serviceData2.map((service, index) => (
+              <div
+                key={index}
+                className="hover:bg-secondary flex cursor-pointer flex-col items-center gap-3 rounded-xl border shadow-xl duration-300 hover:scale-105 hover:text-white"
+              >
+                <img
+                  className="md:h-2/1 h-2/5 w-full rounded-t-xl object-cover"
+                  src={service.img}
+                  alt="card-icon"
+                />
+                <div className="px-6">
+                  <h1 className="mt-5 text-2xl font-bold">{service.title}</h1>
+                  <p className="text-md mt-2 line-clamp-3 text-justify">
+                    {service.desc}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="flex gap-4">
+            <button className="btn btn-secondary text-white">Learn More</button>
+            <button className="btn btn-secondary btn-outline">
+              Get Started
+            </button>
+          </div>
         </div>
+      </section>
+      <section className="flex w-full px-10 md:px-16 py-20">
+        <div className="flex flex-col gap-3 pe-10 w-[60%]">
+          <h4 className="font-semibold text-xs text-info">Globalize</h4>
+          <h1 className="font-bold text-5xl leading-snug">
+            Expand Your Audience <br /> Reach with Our Services
+          </h1>
+          <p className="text-sm w-[90%] text-justify">
+            Our agency specializes in providing dubbing services to creators,
+            helping them reach a global audience. We collaborate with creators
+            to dub their videos, create shorts, and distribute them across
+            various platforms. The best part? Creators don't have to pay us. We
+            take their videos, do the dubbing, and upload them, and in return,
+            we share the ad revenue with them. The percentage of revenue shared
+            depends on the size of their audience, ranging from 20-30%. We are
+            just starting out, so we currently have a limited number of
+            creators, but we are constantly expanding.
+          </p>
+          <div className="flex mt-5">
+            <div className="w-1/2">
+              <h1 className="font-bold text-xl">Increased Reach</h1>
+              <p className="text-sm">
+                Reach a global audience and expand your content's reach across
+                platforms.
+              </p>
+            </div>
+            <div className="w-1/2">
+              <h1 className="font-bold text-xl">Shared Revenue</h1>
+              <p className="text-sm">
+                Earn a share of the ad revenue generated from your dubbed
+                videos.
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 mt-5">
+            <button className="btn btn-secondary text-white">Learn More</button>
+            <button className="btn btn-secondary btn-outline">
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div className="w-[40%] overflow-hidden rounded-xl">
+          <img className="h-full w-full object-cover hover:scale-110 duration-300" src={mrBeast} alt="picture" />
+        </div>
+      </section>
+      <section>
+        
       </section>
     </div>
   );

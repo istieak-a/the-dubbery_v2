@@ -3,7 +3,6 @@ import distribution from "../../assets/distribution.png";
 import mrBeast from "../../assets/mr_beast.jpg";
 import Faq from "../Sections/Faq";
 
-
 const Services = () => {
   const serviceData = [
     {
@@ -41,8 +40,8 @@ const Services = () => {
   ];
   return (
     <div className="min-h-screen">
-      <section className="section_1 flex flex-col items-center py-16 text-white">
-        <h1 className="mb-4 text-4xl font-bold md:text-6xl">
+      <section className="section_1 flex flex-col items-center px-10 py-16 text-white">
+        <h1 className="mb-4 text-3xl font-bold md:text-6xl">
           Unlock Global Audience
         </h1>
         <p className="md:text-md max-w-lg text-center text-lg">
@@ -83,14 +82,14 @@ const Services = () => {
         </div>
       </section>
       <section className="flex w-full flex-col gap-20 px-10 py-20 md:px-16">
-        <div className="flex justify-between flex-col md:flex-row">
+        <div className="flex flex-col justify-between md:flex-row">
           <div>
             <h3 className="text-info text-xs font-semibold">Empower</h3>
-            <h1 className="text-info text-3xl md:text-4xl font-bold">
+            <h1 className="text-info text-3xl font-bold md:text-4xl">
               Unlock Your Content's <br /> Global Potential
             </h1>
           </div>
-          <p className="w-full md:w-1/2 text-justify text-sm">
+          <p className="w-full text-justify text-sm md:w-1/2">
             Our agency offers a range of additional services to help creators
             reach a global audience. In addition to our dubbing service, we also
             specialize in creating short videos and distributing content across
@@ -128,13 +127,13 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section className="flex w-full px-10 md:px-16 py-20">
-        <div className="flex flex-col gap-3 pe-10 w-[60%]">
-          <h4 className="font-semibold text-xs text-info">Globalize</h4>
-          <h1 className="font-bold text-5xl leading-snug">
+      <section className="flex w-full px-10 py-20 md:px-16">
+        <div className="flex w-full flex-col gap-3 md:w-[60%] md:pe-10">
+          <h4 className="text-info text-xs font-semibold">Globalize</h4>
+          <h1 className="text-3xl font-bold leading-snug md:text-5xl">
             Expand Your Audience <br /> Reach with Our Services
           </h1>
-          <p className="text-sm w-[90%] text-justify">
+          <p className="w-[90%] text-justify text-sm">
             Our agency specializes in providing dubbing services to creators,
             helping them reach a global audience. We collaborate with creators
             to dub their videos, create shorts, and distribute them across
@@ -145,34 +144,38 @@ const Services = () => {
             just starting out, so we currently have a limited number of
             creators, but we are constantly expanding.
           </p>
-          <div className="flex mt-5">
+          <div className="mt-5 flex">
             <div className="w-1/2">
-              <h1 className="font-bold text-xl">Increased Reach</h1>
+              <h1 className="text-lg font-bold md:text-xl">Increased Reach</h1>
               <p className="text-sm">
                 Reach a global audience and expand your content's reach across
                 platforms.
               </p>
             </div>
             <div className="w-1/2">
-              <h1 className="font-bold text-xl">Shared Revenue</h1>
+              <h1 className="text-lg font-bold md:text-xl">Shared Revenue</h1>
               <p className="text-sm">
                 Earn a share of the ad revenue generated from your dubbed
                 videos.
               </p>
             </div>
           </div>
-          <div className="flex gap-4 mt-5">
+          <div className="mt-5 flex gap-4">
             <button className="btn btn-secondary text-white">Learn More</button>
             <button className="btn btn-secondary btn-outline">
               Get Started
             </button>
           </div>
         </div>
-        <div className="w-[40%] overflow-hidden rounded-xl">
-          <img className="h-full w-full object-cover hover:scale-110 duration-300" src={mrBeast} alt="picture" />
+        <div className="hidden w-[40%] overflow-hidden rounded-xl md:block">
+          <img
+            className="h-full w-full object-cover duration-300 hover:scale-110"
+            src={mrBeast}
+            alt="picture"
+          />
         </div>
       </section>
-      <section className="px-10 md:px-16 py-20">
+      <section className="px-10 py-20 md:px-16">
         <Faq />
       </section>
     </div>

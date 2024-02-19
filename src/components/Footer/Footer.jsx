@@ -31,16 +31,16 @@ const Footer = () => {
   ];
   const footerLinks = [
     {
+      name: "Career",
+      link: "/career",
+    },
+    {
       name: "Privacy Policy",
       link: "/privacy-policy",
     },
     {
       name: "Terms and Conditions",
       link: "/terms-and-conditions",
-    },
-    {
-      name: "Cookie Policy",
-      link: "/cookie-policy",
     },
   ];
   return (

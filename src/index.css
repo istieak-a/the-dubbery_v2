@@ -13,3 +13,9 @@ body {
   background-color: #ffffff;
   color: #3869e7;
 }
+input{
+  background: white;
+}
+textarea{
+  background: white;
+}

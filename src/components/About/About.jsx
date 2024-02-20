@@ -108,11 +108,11 @@ const About = () => {
   };
   return (
     <div className="min-h-screen">
-      <section className="section_1 flex flex-col items-center py-16 text-white">
-        <h1 className="mb-4 text-4xl font-bold md:text-6xl">
+      <section className="section_1 flex flex-col items-center py-16 px-10 text-white">
+        <h1 className="mb-4 text-4xl text-center font-bold md:text-6xl">
           Empowering Global Creators
         </h1>
-        <p className="md:text-md max-w-lg text-center text-lg">
+        <p className="md:text-md max-w-lg text-center text-sm">
           We help creators reach a global audience through our professional
           dubbing services.
         </p>
@@ -191,8 +191,8 @@ const About = () => {
       </section>
       <section className="flex flex-col gap-10 px-10 py-20 md:px-16">
         <div className="flex flex-col gap-4 rounded-lg bg-gray-100 p-5 shadow-md">
-          <h3 className="text-sm font-semibold text-blue-600">Passionate</h3>
-          <h1 className="text-5xl font-bold text-blue-800">Our Team</h1>
+          <h3 className="text-xs font-semibold text-blue-600">Passionate</h3>
+          <h1 className="text-3xl md:text-5xl font-bold text-blue-800">Our Team</h1>
           <p className="text-gray-700">
             Meet the talented individuals behind our agency.
           </p>
@@ -212,7 +212,7 @@ const About = () => {
       </section>
       <section className="flex flex-col items-start gap-3 rounded-lg bg-blue-100 px-10 py-20 shadow-md md:px-16">
         <h1 className="text-4xl font-bold text-blue-800">We're hiring!</h1>
-        <p className="text-lg text-gray-700">
+        <p className="text-sm md:text-lg text-gray-700">
           Join our team and help us build the future of digital experiences. We
           offer competitive salaries, flexible work hours, and the opportunity
           to make a big impact in a small, agile team.

@@ -56,7 +56,7 @@ const Contact = () => {
           partnerships. Feel free to reach out to us using the information.
         </p>
       </section>
-      <section className="mt-20 flex flex-col justify-between  gap-20 px-20 pb-32 md:flex-row">
+      <section className="mt-20 flex flex-col justify-between gap-20 px-4 sm:px-20 pb-32 md:flex-row">
         <div className="w-full md:w-[40%]">
           <h4 className="border-grey border-b-2 pb-5 text-xl font-bold">
             Get In Touch
@@ -73,10 +73,6 @@ const Contact = () => {
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7298.959613691923!2d90.36501103689002!3d23.837090178134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c14a3366b005%3A0x901b07016468944c!2sMirpur%20DOHS%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1707581138198!5m2!1sen!2sbd"
-            // width="600"
-            // height="450"
-            // style="border:0"
-            // allowfullscreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="mt-10 h-[300px] w-full rounded-xl shadow-xl"
@@ -86,7 +82,7 @@ const Contact = () => {
           <h1 className="border-grey border-b-2 pb-5 text-xl font-bold">
             Have an idea?
           </h1>
-          <p className="mt-5 w-full text-xs md:w-[70%]">
+          <p className="mt-5 w-full text-xs sm:text-sm md:w-[70%]">
             We are always looking for new ideas and collaborations. If you have
             a project in mind, we would love to hear from you.
           </p>
@@ -95,20 +91,20 @@ const Contact = () => {
               type="text"
               placeholder="Your Name"
               name="user_name"
-              className="border-grey mt-5 w-full rounded-xl border px-5 py-3 md:w-[70%]"
+              className="border-grey mt-5 w-full rounded-xl border px-3 py-3 sm:px-5 md:w-[70%]"
             />
             <input
               type="text"
               placeholder="Your Email"
               name="user_email"
-              className="border-grey mt-5 w-full rounded-xl border px-5 py-3 md:w-[70%]"
+              className="border-grey mt-5 w-full rounded-xl border px-3 py-3 sm:px-5 md:w-[70%]"
             />
             <textarea
               name="message"
               id=""
               rows="5"
               placeholder="Your Message"
-              className="border-grey mt-5 w-full rounded-xl border px-5 py-3 md:w-[70%]"
+              className="border-grey mt-5 w-full rounded-xl border px-3 py-3 sm:px-5 md:w-[70%]"
             ></textarea>
             <button
               type="submit"

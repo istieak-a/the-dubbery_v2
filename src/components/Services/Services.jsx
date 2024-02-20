@@ -45,17 +45,17 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       <section className="section_1 flex flex-col items-center px-10 py-16 text-white">
-        <h1 className="mb-4 text-3xl font-bold md:text-6xl">
+        <h1 className="mb-4 text-center text-3xl font-bold md:text-6xl">
           Unlock Global Audience
         </h1>
-        <p className="md:text-md max-w-lg text-center text-lg">
+        <p className="md:text-md max-w-lg text-center text-sm">
           We provide dubbing services to help creators reach a global audience.
         </p>
       </section>
-      <section className="flex flex-col items-center justify-center gap-10 px-10 py-20 text-center sm:px-16">
+      <section className="flex flex-col items-center justify-center gap-10 px-10 py-20 text-center md:px-16">
         <div className="flex flex-col items-center">
           <h3 className="mb-2 text-xs font-semibold">Simplified</h3>
-          <h1 className="mb-5 text-5xl font-bold">
+          <h1 className="mb-5 text-3xl font-bold md:text-5xl">
             Streamline the Dubbing and <br /> Distribution Process
           </h1>
           <p className="mt-5 w-full text-sm sm:w-1/2">
@@ -76,7 +76,9 @@ const Services = () => {
                 alt="card-icon"
               />
               <h1 className="mt-5 text-xl font-bold">{service.title}</h1>
-              <p className="text-md mt-2 text-justify">{service.desc}</p>
+              <p className="md:text-md mt-2 text-justify text-xs">
+                {service.desc}
+              </p>
             </div>
           ))}
         </div>
@@ -93,13 +95,13 @@ const Services = () => {
       </section>
       <section className="flex w-full flex-col gap-20 px-10 py-20 md:px-16">
         <div className="flex flex-col justify-between md:flex-row">
-          <div>
+          <div className="flex flex-col gap-3">
             <h3 className="text-xs font-semibold text-info">Empower</h3>
             <h1 className="text-3xl font-bold text-info md:text-4xl">
               Unlock Your Content's <br /> Global Potential
             </h1>
           </div>
-          <p className="w-full text-justify text-sm md:w-1/2">
+          <p className="mt-3 w-full text-justify text-sm md:w-1/2">
             Our agency offers a range of additional services to help creators
             reach a global audience. In addition to our dubbing service, we also
             specialize in creating short videos and distributing content across
@@ -121,8 +123,8 @@ const Services = () => {
                   alt="card-icon"
                 />
                 <div className="px-6">
-                  <h1 className="mt-5 text-2xl font-bold">{service.title}</h1>
-                  <p className="text-md mt-2 line-clamp-3 text-justify">
+                  <h1 className="mt-5 text-xl md:text-2xl font-bold">{service.title}</h1>
+                  <p className="text-sm md:text-md mt-2 line-clamp-3 text-justify">
                     {service.desc}
                   </p>
                 </div>
@@ -149,7 +151,7 @@ const Services = () => {
           <h1 className="text-3xl font-bold leading-snug md:text-5xl">
             Expand Your Audience <br /> Reach with Our Services
           </h1>
-          <p className="w-[90%] text-justify text-sm">
+          <p className="w-full text-justify text-xs md:w-[90%] md:text-sm">
             Our agency specializes in providing dubbing services to creators,
             helping them reach a global audience. We collaborate with creators
             to dub their videos, create shorts, and distribute them across

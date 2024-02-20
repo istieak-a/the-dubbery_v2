@@ -197,7 +197,7 @@ const Home = () => {
       <section className="flex min-h-screen flex-col items-center gap-10 bg-bg100 px-10 py-20 md:px-20">
         <div className="portfolio-title-section flex w-full flex-col items-center rounded-md py-10 text-center text-white">
           <h2 className="text-xs font-semibold">PORTFOLIO</h2>
-          <h1 className="text-4xl font-bold md:text-5xl">Cerators Go Global</h1>
+          <h1 className="text-3xl font-bold md:text-5xl">Cerators Go Global</h1>
           <p className="text-xs">Check our projects that we have collborated</p>
         </div>
 

@@ -44,7 +44,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 bg-bgdark py-10 md:py-20 md:px-16">
+    <div className="flex flex-col gap-10 bg-bgdark py-10 md:px-16 md:py-20">
       <div className="flex flex-col items-center gap-7 md:flex-row md:justify-between">
         <Link to="/">
           <img className="h-10" src={logo} alt="the-dubbery" />
@@ -77,9 +77,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="mx-6 flex flex-col-reverse items-center gap-5 border-t pt-10 text-sm text-white md:mx-0 md:flex-row md:justify-between ">
-        <p>
+        <p className="text-center">
           &copy; {new Date().getFullYear()}{" "}
-          <a href="https://istieakahmed.com" className="hover:underline">
+          <a
+            href="https://istieakahmed.com"
+            className="font-bold hover:underline"
+          >
             Istieak Ahmed
           </a>
           . All rights reserved.

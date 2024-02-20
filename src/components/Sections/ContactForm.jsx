@@ -26,8 +26,8 @@ const ContactForm = () => {
     <div className="flex flex-col items-center gap-10">
       <div className="flex flex-col items-center gap-2">
         <h3 className="text-xs font-semibold">Connect</h3>
-        <h1 className="text-5xl font-bold">Get in Touch</h1>
-        <p className="text-sm md:text-base">
+        <h1 className="text-4xl md:text-5xl font-bold text-center">Get in Touch</h1>
+        <p className="text-sm md:text-base text-center">
           Have a question or want to collaborate? Contact us!
         </p>
       </div>

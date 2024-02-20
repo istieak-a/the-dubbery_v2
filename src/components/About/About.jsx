@@ -8,6 +8,7 @@ import avatar from "../../assets/avatar.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -127,7 +128,9 @@ const About = () => {
             molestias tenetur, aspernatur fuga quod provident recusandae. Quia
             iure reprehenderit non earum!
           </p>
-          <Button className="mt-5 bg-blue-500 text-white">Learn More</Button>
+          <Link to={`/contact`}>
+            <button className="btn btn-outline btn-primary">Get Started</button>
+          </Link>
         </div>
         <div className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl bg-gray-200 transition-all duration-300 hover:scale-105 md:w-1/2">
           <img className="h-full w-full" src={dubbing_mic} alt="" />
@@ -158,7 +161,9 @@ const About = () => {
               <p>Collaborative Partnership Approach</p>
             </li>
           </ul>
-          <Button className="mt-5 bg-blue-500 text-white">Learn More</Button>
+          <Link to={`/contact`}>
+            <button className="btn btn-outline btn-primary">Get Started</button>
+          </Link>
         </div>
         <div className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl bg-gray-200 transition-all duration-300 hover:scale-105 md:w-1/2">
           <img className="h-full w-full" src={dubbing_mic} alt="" />
@@ -176,7 +181,9 @@ const About = () => {
             molestias tenetur, aspernatur fuga quod provident recusandae. Quia
             iure reprehenderit non earum!
           </p>
-          <Button className="mt-5 bg-blue-500 text-white">Learn More</Button>
+          <Link to={`/contact`}>
+            <button className="btn btn-outline btn-primary">Get Started</button>
+          </Link>
         </div>
         <div className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl bg-gray-200 transition-all duration-300 hover:scale-105 md:w-1/2">
           <img className="h-full w-full" src={dubbing_mic} alt="" />
@@ -206,12 +213,13 @@ const About = () => {
       <section className="flex flex-col items-start gap-3 rounded-lg bg-blue-100 px-10 py-20 shadow-md md:px-16">
         <h1 className="text-4xl font-bold text-blue-800">We're hiring!</h1>
         <p className="text-lg text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          excepturi.
+          Join our team and help us build the future of digital experiences. We
+          offer competitive salaries, flexible work hours, and the opportunity
+          to make a big impact in a small, agile team.
         </p>
-        <Button className="rounded bg-blue-600 px-4 py-2 text-white">
-          Apply Now
-        </Button>
+        <Link to={`/career`}>
+          <button className="btn btn-primary">Get Started</button>
+        </Link>
       </section>
     </div>
   );

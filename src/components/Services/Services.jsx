@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import distribution from "../../assets/distribution.png";
 import mrBeast from "../../assets/mr_beast.jpg";
 import Faq from "../Sections/Faq";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   useEffect(() => {
@@ -80,8 +81,14 @@ const Services = () => {
           ))}
         </div>
         <div className="flex gap-3">
-          <button className="btn btn-primary">Learn More</button>
-          <button className="btn btn-outline btn-primary px-6">Sign Up</button>
+          <Link to="/contact">
+            <button className="btn btn-secondary text-white">Learn More</button>
+          </Link>
+          <Link to="/contact">
+            <button className="btn btn-outline btn-secondary">
+              Get Started
+            </button>
+          </Link>
         </div>
       </section>
       <section className="flex w-full flex-col gap-20 px-10 py-20 md:px-16">
@@ -123,10 +130,16 @@ const Services = () => {
             ))}
           </div>
           <div className="flex gap-4">
-            <button className="btn btn-secondary text-white">Learn More</button>
-            <button className="btn btn-outline btn-secondary">
-              Get Started
-            </button>
+            <Link to="/contact">
+              <button className="btn btn-secondary text-white">
+                Learn More
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="btn btn-outline btn-secondary">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -164,10 +177,16 @@ const Services = () => {
             </div>
           </div>
           <div className="mt-5 flex gap-4">
-            <button className="btn btn-secondary text-white">Learn More</button>
-            <button className="btn btn-outline btn-secondary">
-              Get Started
-            </button>
+            <Link to="/contact">
+              <button className="btn btn-secondary text-white">
+                Learn More
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="btn btn-outline btn-secondary">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
         <div className="hidden w-[40%] overflow-hidden rounded-xl md:block">

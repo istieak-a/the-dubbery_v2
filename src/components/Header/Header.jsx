@@ -162,7 +162,7 @@ const Header = () => {
                       />
                     </div>
                   ))}
-                  <div className="flex gap-5 mt-5">
+                  <div className="mt-5 flex gap-5">
                     {socialMedia.map((social, index) => (
                       <a
                         href={social.link}
@@ -196,7 +196,11 @@ const Header = () => {
         </li>
       </ul>
       <div className="hidden md:block">
-        <Button>Get Started</Button>
+        <a href="/#contact-form">
+          <button className="btn btn-secondary px-10 text-white">
+            Get Started
+          </button>
+        </a>
       </div>
     </header>
   );

@@ -120,7 +120,9 @@ const Home = () => {
               <p>Wide Platform Distribution</p>
             </li>
           </ul>
-          <button className="btn btn-primary">Learn More</button>
+          <Link to={`/services`}>
+            <button className="btn btn-primary">Learn More</button>
+          </Link>
           {/* <ButtonAccent>Learn More</ButtonAccent> */}
         </div>
         <div className="flex w-full cursor-pointer  items-center justify-center  overflow-hidden rounded-2xl bg-bg100 transition-all duration-300 hover:scale-105 md:w-1/2">
@@ -177,10 +179,15 @@ const Home = () => {
             </li>
           </ul>
           <div className="flex gap-4">
-            <button className="btn btn-primary">Learn More</button>
-            <button className="btn btn-outline btn-primary">
-              Sign Up <RiArrowRightSLine />
-            </button>
+            <Link to={`/services`}>
+              <button className="btn btn-primary">Learn More</button>
+            </Link>
+
+            <a href="#contact-form">
+              <button className="btn btn-outline btn-primary">
+                SignUp <RiArrowRightSLine />
+              </button>
+            </a>
           </div>
         </div>
         <div className="flex w-full cursor-pointer items-center justify-center  overflow-hidden rounded-2xl bg-bg100 transition-all duration-300 hover:scale-105 md:w-1/2">
@@ -213,7 +220,7 @@ const Home = () => {
       <section className="bg-neutral py-20">
         <InviteSection />
       </section>
-      <section className="bg-bg200 px-10 py-10">
+      <section className="bg-bg200 px-10 py-14" id="contact-form">
         <ContactForm />
       </section>
     </div>

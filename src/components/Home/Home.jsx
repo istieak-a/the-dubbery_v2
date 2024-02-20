@@ -5,7 +5,7 @@ import "./home.css";
 import { BiCaretRight } from "react-icons/bi";
 import ButtonAccent from "../Button/ButtonAccent";
 // import dubbing_mic from "../../assets/dubbing_mic2.png";
-import dubbing_mic from "../../assets/dubbing_mic2.png"
+import dubbing_mic from "../../assets/dubbing_mic2.png";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import { RiArrowRightSLine } from "react-icons/ri";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
@@ -14,8 +14,12 @@ import Button from "../Button/Button";
 import Reviews from "../Sections/Reviews";
 import InviteSection from "../Sections/InviteSection";
 import ContactForm from "../Sections/ContactForm";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const serviceData = [
     {
       ico: "https://img.icons8.com/ios/452/translation.png",
@@ -173,9 +177,7 @@ const Home = () => {
             </li>
           </ul>
           <div className="flex gap-4">
-            <button className="btn btn-primary">
-              Learn More
-            </button>
+            <button className="btn btn-primary">Learn More</button>
             <button className="btn btn-outline btn-primary">
               Sign Up <RiArrowRightSLine />
             </button>
@@ -208,10 +210,10 @@ const Home = () => {
       <section className="py-20">
         <Reviews />
       </section>
-      <section className="py-20 bg-neutral">
+      <section className="bg-neutral py-20">
         <InviteSection />
       </section>
-      <section className="py-10 px-10 bg-bg200">
+      <section className="bg-bg200 px-10 py-10">
         <ContactForm />
       </section>
     </div>

@@ -13,15 +13,20 @@ import Home from "./components/Home/Home.jsx";
 import About from "./components/About/About.jsx";
 import Services from "./components/Services/Services.jsx";
 import Contact from "./components/Contact/Contact.jsx";
+import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions.jsx";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy.jsx";
+import Career from "./components/Career/Career.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services/>} />
-      <Route path="/contact" element={<Contact/>} />
-
+      <Route path="/services" element={<Services />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/career" element={<Career/>} />
     </Route>,
   ),
 );

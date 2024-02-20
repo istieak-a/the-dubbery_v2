@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
@@ -6,6 +6,9 @@ import emailjs from "@emailjs/browser";
 import Faq from "../Sections/Faq";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const contactData = [
     {
       icon: <MdEmail />,

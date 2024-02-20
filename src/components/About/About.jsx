@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 import Button from "../Button/Button";
 import dubbing_mic from "../../assets/dubbing_mic2.png";
@@ -9,6 +9,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const teamMembers = [
     {
       img: avatar,
@@ -75,32 +78,32 @@ const About = () => {
     },
   ];
   const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000, // Change slides every 2 seconds
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-          },
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, // Change slides every 2 seconds
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
         },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            initialSlide: 1,
-          },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
-      ],
+      },
+    ],
   };
   return (
     <div className="min-h-screen">
@@ -179,7 +182,7 @@ const About = () => {
           <img className="h-full w-full" src={dubbing_mic} alt="" />
         </div>
       </section>
-      <section className="flex flex-col gap-10 px-10 md:px-16 py-20">
+      <section className="flex flex-col gap-10 px-10 py-20 md:px-16">
         <div className="flex flex-col gap-4 rounded-lg bg-gray-100 p-5 shadow-md">
           <h3 className="text-sm font-semibold text-blue-600">Passionate</h3>
           <h1 className="text-5xl font-bold text-blue-800">Our Team</h1>
@@ -190,17 +193,25 @@ const About = () => {
         <div className="">
           <Slider {...settings}>
             {teamMembers.map((member, index) => (
-              <div key={index} className=" py-10 flex items-center justify-center">
+              <div
+                key={index}
+                className=" flex items-center justify-center py-10"
+              >
                 <TeamCard {...member} />
               </div>
             ))}
           </Slider>
         </div>
       </section>
-      <section className="px-10 md:px-16 flex flex-col gap-3 items-start py-20 bg-blue-100 rounded-lg shadow-md">
+      <section className="flex flex-col items-start gap-3 rounded-lg bg-blue-100 px-10 py-20 shadow-md md:px-16">
         <h1 className="text-4xl font-bold text-blue-800">We're hiring!</h1>
-        <p className="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, excepturi.</p>
-        <Button className="bg-blue-600 text-white py-2 px-4 rounded">Apply Now</Button>
+        <p className="text-lg text-gray-700">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+          excepturi.
+        </p>
+        <Button className="rounded bg-blue-600 px-4 py-2 text-white">
+          Apply Now
+        </Button>
       </section>
     </div>
   );

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import distribution from "../../assets/distribution.png";
 import mrBeast from "../../assets/mr_beast.jpg";
 import Faq from "../Sections/Faq";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const serviceData = [
     {
       ico: distribution,
@@ -64,7 +67,7 @@ const Services = () => {
           {serviceData.map((service, index) => (
             <div
               key={index}
-              className="bg-secondary hover:bg-info flex cursor-pointer flex-col items-center gap-3 rounded-xl border px-5 py-8 text-white shadow-xl duration-300 hover:scale-105"
+              className="flex cursor-pointer flex-col items-center gap-3 rounded-xl border bg-secondary px-5 py-8 text-white shadow-xl duration-300 hover:scale-105 hover:bg-info"
             >
               <img
                 className="h-16 w-16 md:h-24 md:w-24"
@@ -78,14 +81,14 @@ const Services = () => {
         </div>
         <div className="flex gap-3">
           <button className="btn btn-primary">Learn More</button>
-          <button className="btn btn-primary btn-outline px-6">Sign Up</button>
+          <button className="btn btn-outline btn-primary px-6">Sign Up</button>
         </div>
       </section>
       <section className="flex w-full flex-col gap-20 px-10 py-20 md:px-16">
         <div className="flex flex-col justify-between md:flex-row">
           <div>
-            <h3 className="text-info text-xs font-semibold">Empower</h3>
-            <h1 className="text-info text-3xl font-bold md:text-4xl">
+            <h3 className="text-xs font-semibold text-info">Empower</h3>
+            <h1 className="text-3xl font-bold text-info md:text-4xl">
               Unlock Your Content's <br /> Global Potential
             </h1>
           </div>
@@ -103,7 +106,7 @@ const Services = () => {
             {serviceData2.map((service, index) => (
               <div
                 key={index}
-                className="hover:bg-secondary flex cursor-pointer flex-col items-center gap-3 rounded-xl border shadow-xl duration-300 hover:scale-105 hover:text-white"
+                className="flex cursor-pointer flex-col items-center gap-3 rounded-xl border shadow-xl duration-300 hover:scale-105 hover:bg-secondary hover:text-white"
               >
                 <img
                   className="md:h-2/1 h-2/5 w-full rounded-t-xl object-cover"
@@ -121,7 +124,7 @@ const Services = () => {
           </div>
           <div className="flex gap-4">
             <button className="btn btn-secondary text-white">Learn More</button>
-            <button className="btn btn-secondary btn-outline">
+            <button className="btn btn-outline btn-secondary">
               Get Started
             </button>
           </div>
@@ -129,7 +132,7 @@ const Services = () => {
       </section>
       <section className="flex w-full px-10 py-20 md:px-16">
         <div className="flex w-full flex-col gap-3 md:w-[60%] md:pe-10">
-          <h4 className="text-info text-xs font-semibold">Globalize</h4>
+          <h4 className="text-xs font-semibold text-info">Globalize</h4>
           <h1 className="text-3xl font-bold leading-snug md:text-5xl">
             Expand Your Audience <br /> Reach with Our Services
           </h1>
@@ -162,7 +165,7 @@ const Services = () => {
           </div>
           <div className="mt-5 flex gap-4">
             <button className="btn btn-secondary text-white">Learn More</button>
-            <button className="btn btn-secondary btn-outline">
+            <button className="btn btn-outline btn-secondary">
               Get Started
             </button>
           </div>

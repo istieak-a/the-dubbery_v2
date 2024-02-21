@@ -9,6 +9,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import empower from "../../assets/empower.jpg";
+import globeHand from "../../assets/globe-hand.jpeg";
+import distribution from "../../assets/distribution.jpeg";
+
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -108,8 +112,8 @@ const About = () => {
   };
   return (
     <div className="min-h-screen">
-      <section className="section_1 flex flex-col items-center py-16 px-10 text-white">
-        <h1 className="mb-4 text-4xl text-center font-bold md:text-6xl">
+      <section className="section_1 flex flex-col items-center px-10 py-16 text-white">
+        <h1 className="mb-4 text-center text-4xl font-bold md:text-6xl">
           Empowering Global Creators
         </h1>
         <p className="md:text-md max-w-lg text-center text-sm">
@@ -123,29 +127,27 @@ const About = () => {
             Empowering creators to <br /> reach a global audience
           </h1>
           <p className="pe-0 text-justify text-base font-medium md:pe-20">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-            velit neque, molestiae eaque, distinctio cupiditate laborum ex a
-            molestias tenetur, aspernatur fuga quod provident recusandae. Quia
-            iure reprehenderit non earum!
+            At our agency, we believe in helping creators expand their reach and
+            connect with audiences worldwide. Through our dubbing services,
+            short film creation, and platform distribution, we provide a unique
+            approach to support creators in their journey to global success.
           </p>
           <Link to={`/contact`}>
             <button className="btn btn-outline btn-primary">Get Started</button>
           </Link>
         </div>
-        <div className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl bg-gray-200 transition-all duration-300 hover:scale-105 md:w-1/2">
-          <img className="h-full w-full" src={dubbing_mic} alt="" />
+        <div className="hidden w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl bg-gray-200 transition-all duration-300 hover:scale-105 md:flex md:w-1/2">
+          <img className="h-full w-full" src={empower} alt="" />
         </div>
       </section>
-      <section className="section_2 flex w-full flex-col items-center justify-center gap-10 bg-gray-200 p-10 text-gray-800 md:flex-row-reverse md:px-16">
+      <section className="section_2 flex w-full flex-col items-center justify-center gap-10 bg-[#d5effc] p-10 text-gray-800 md:flex-row-reverse md:px-16">
         <div className="flex w-full flex-col items-start gap-5 md:w-3/4">
           <h1 className="text-3xl font-bold text-blue-500 md:text-5xl 2xl:text-6xl">
             Unlock Your Global Potential with Our Dubbing Services
           </h1>
           <p className="pe-0 text-justify text-base font-medium md:pe-20">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-            velit neque, molestiae eaque, distinctio cupiditate laborum ex a
-            molestias tenetur, aspernatur fuga quod provident recusandae. Quia
-            iure reprehenderit non earum!
+            Our agency's services benefit creators by expanding their reach and
+            providing shared ad revenue.
           </p>
           <ul className="text-md mt-5 font-medium">
             <li>
@@ -166,7 +168,7 @@ const About = () => {
           </Link>
         </div>
         <div className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl bg-gray-200 transition-all duration-300 hover:scale-105 md:w-1/2">
-          <img className="h-full w-full" src={dubbing_mic} alt="" />
+          <img className="h-full w-full" src={globeHand} alt="" />
         </div>
       </section>
       <section className="section_2 flex w-full flex-col items-center justify-center gap-10 bg-gray-200 p-10 text-gray-800 md:flex-row md:px-16">
@@ -176,23 +178,25 @@ const About = () => {
             and distribution services.
           </h1>
           <p className="pe-0 text-justify text-base font-medium md:pe-20">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-            velit neque, molestiae eaque, distinctio cupiditate laborum ex a
-            molestias tenetur, aspernatur fuga quod provident recusandae. Quia
-            iure reprehenderit non earum!
+            Our agency specializes in providing high-quality dubbing, creating
+            engaging shorts, and distributing content across multiple platforms.
+            With our services, you can reach a global audience and maximize your
+            content's impact.
           </p>
           <Link to={`/contact`}>
             <button className="btn btn-outline btn-primary">Get Started</button>
           </Link>
         </div>
-        <div className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl bg-gray-200 transition-all duration-300 hover:scale-105 md:w-1/2">
-          <img className="h-full w-full" src={dubbing_mic} alt="" />
+        <div className="hidden w-full cursor-pointer items-center justify-center overflow-hidden rounded-2xl bg-gray-200 transition-all duration-300 hover:scale-105 md:flex md:w-1/2">
+          <img className="h-full w-full" src={distribution} alt="" />
         </div>
       </section>
       <section className="flex flex-col gap-10 px-10 py-20 md:px-16">
         <div className="flex flex-col gap-4 rounded-lg bg-gray-100 p-5 shadow-md">
           <h3 className="text-xs font-semibold text-blue-600">Passionate</h3>
-          <h1 className="text-3xl md:text-5xl font-bold text-blue-800">Our Team</h1>
+          <h1 className="text-3xl font-bold text-blue-800 md:text-5xl">
+            Our Team
+          </h1>
           <p className="text-gray-700">
             Meet the talented individuals behind our agency.
           </p>
@@ -212,7 +216,7 @@ const About = () => {
       </section>
       <section className="flex flex-col items-start gap-3 rounded-lg bg-blue-100 px-10 py-20 shadow-md md:px-16">
         <h1 className="text-4xl font-bold text-blue-800">We're hiring!</h1>
-        <p className="text-sm md:text-lg text-gray-700">
+        <p className="text-sm text-gray-700 md:text-lg">
           Join our team and help us build the future of digital experiences. We
           offer competitive salaries, flexible work hours, and the opportunity
           to make a big impact in a small, agile team.

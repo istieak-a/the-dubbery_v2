@@ -15,6 +15,8 @@ import Reviews from "../Sections/Reviews";
 import InviteSection from "../Sections/InviteSection";
 import ContactForm from "../Sections/ContactForm";
 import { useEffect } from "react";
+import globe from "../../assets/globe.png";
+import revenue from "../../assets/revenue.jpeg"; 
 
 const Home = () => {
   useEffect(() => {
@@ -125,8 +127,8 @@ const Home = () => {
           </Link>
           {/* <ButtonAccent>Learn More</ButtonAccent> */}
         </div>
-        <div className="flex w-full cursor-pointer  items-center justify-center  overflow-hidden rounded-2xl bg-bg100 transition-all duration-300 hover:scale-105 md:w-1/2">
-          <img className="h-full w-full" src={dubbing_mic} alt="" />
+        <div className="flex w-full cursor-pointer  items-center justify-center  overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 md:w-1/2">
+          <img className="h-full w-full" src={globe} alt="" />
         </div>
       </section>
       <section className="flex flex-col gap-20 bg-neutral px-10 py-20 md:px-[8vw]">
@@ -190,11 +192,11 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="flex w-full cursor-pointer items-center justify-center  overflow-hidden rounded-2xl bg-bg100 transition-all duration-300 hover:scale-105 md:w-1/2">
-          <img className="h-full w-full" src={dubbing_mic} alt="" />
+        <div className="w-full cursor-pointer hidden md:flex items-center justify-center  overflow-hidden rounded-2xl bg-bg100 transition-all duration-300 hover:scale-105 md:w-1/2">
+          <img className="h-full w-full" src={revenue} alt="" />
         </div>
       </section>
-      <section className="flex min-h-screen flex-col items-center gap-10 bg-bg100 px-10 py-20 md:px-20">
+      {/* <section className="flex min-h-screen flex-col items-center gap-10 bg-bg100 px-10 py-20 md:px-20">
         <div className="portfolio-title-section flex w-full flex-col items-center rounded-md py-10 text-center text-white">
           <h2 className="text-xs font-semibold">PORTFOLIO</h2>
           <h1 className="text-3xl font-bold md:text-5xl">Cerators Go Global</h1>
@@ -213,7 +215,7 @@ const Home = () => {
           ))}
         </div>
         <Button>View All</Button>
-      </section>
+      </section> */}
       <section className="py-20">
         <Reviews />
       </section>

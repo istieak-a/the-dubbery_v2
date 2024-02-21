@@ -1,8 +1,14 @@
 import React, { useEffect } from "react";
-import distribution from "../../assets/distribution.png";
+// import distribution from "../../assets/distribution.png";
 import mrBeast from "../../assets/mr_beast.jpg";
 import Faq from "../Sections/Faq";
 import { Link } from "react-router-dom";
+import submit from "../../assets/submit.png";
+import distributionWide from "../../assets/distributionWide.png";
+import dubbingService from "../../assets/dubbingService.png";
+import mobileShorts from "../../assets/mobileShorts.jpg";
+import multiPlatform from "../../assets/multiPlaform.jpeg";
+import globeWPeople from "../../assets/globewith_people.jpeg";
 
 const Services = () => {
   useEffect(() => {
@@ -10,34 +16,34 @@ const Services = () => {
   }, []);
   const serviceData = [
     {
-      ico: distribution,
+      ico: submit,
       title: "Submit Your Content",
       desc: "Creators can easily submit their content to us for dubbing and distribution.",
     },
     {
-      ico: distribution,
+      ico: distributionWide,
       title: "Professional Dubbing Services",
       desc: "Our team of experts provides high-quality dubbing services to enhance your content.",
     },
     {
-      ico: distribution,
+      ico: dubbingService,
       title: "Wide Distribution Reach",
       desc: "We distribute your content across multiple platforms to maximize your reach.",
     },
   ];
   const serviceData2 = [
     {
-      img: mrBeast,
+      img: mobileShorts,
       title: "Short Creation",
       desc: "Let our team create captivating short videos that grab attention and drive engagement.",
     },
     {
-      img: mrBeast,
+      img: multiPlatform,
       title: "Multi-Platform Distribution",
       desc: "Expand your contents reach by distributing it across various platforms and maximize your audience.",
     },
     {
-      img: mrBeast,
+      img: globeWPeople,
       title: "Revenue Sharing",
       desc: "We share ad revenue with creators based on their audience size, ensuring a fair partnership.",
     },
@@ -111,11 +117,11 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col gap-10">
-          <div className=" grid grid-cols-1 gap-10 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
             {serviceData2.map((service, index) => (
               <div
                 key={index}
-                className="flex cursor-pointer flex-col items-center gap-3 rounded-xl border shadow-xl duration-300 hover:scale-105 hover:bg-secondary hover:text-white"
+                className="flex cursor-pointer h-[350px] flex-col items-center gap-3 rounded-xl border shadow-xl duration-300 hover:scale-105 hover:bg-secondary hover:text-white"
               >
                 <img
                   className="md:h-2/1 h-2/5 w-full rounded-t-xl object-cover"
@@ -123,8 +129,10 @@ const Services = () => {
                   alt="card-icon"
                 />
                 <div className="px-6">
-                  <h1 className="mt-5 text-xl md:text-2xl font-bold">{service.title}</h1>
-                  <p className="text-sm md:text-md mt-2 line-clamp-3 text-justify">
+                  <h1 className="mt-5 text-xl font-bold md:text-2xl">
+                    {service.title}
+                  </h1>
+                  <p className="md:text-md mt-2  text-justify text-sm">
                     {service.desc}
                   </p>
                 </div>

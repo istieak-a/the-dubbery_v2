@@ -1,7 +1,6 @@
 // import React from "react";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import { useState } from "react";
@@ -9,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 const Header = () => {
   const navData = [
     { title: "Home", link: "/" },
@@ -18,30 +17,30 @@ const Header = () => {
     { title: "Contact", link: "/contact" },
   ];
   const contactData = [
-    { title: "hello@istieakahmed.com", link: "#" },
-    { title: "+880 15711-42863", link: "#" },
+    { title: "contact@thedubbery.com", link: "mailto:contact@thedubbery.com" },
+    { title: "+880 13012-43863", link: "tel:+8801571142863" },
   ];
   const socialMedia = [
     {
       name: "Facebook",
       icon: <FaFacebook />,
-      link: "https://www.facebook.com",
+      link: "https://www.facebook.com/thedubbery",
     },
     {
       name: "Twitter",
       icon: <FaXTwitter />,
-      link: "https://www.twitter.com",
+      link: "https://www.twitter.com/thedubbery",
     },
     {
       name: "Instagram",
       icon: <FaInstagram />,
-      link: "https://www.instagram.com",
+      link: "https://www.instagram.com/thedubbery",
     },
-    {
-      name: "Whatsapp",
-      icon: <FaWhatsapp />,
-      link: "https://www.whatsapp.com",
-    },
+    // {
+    //   name: "Whatsapp",
+    //   icon: <FaWhatsapp />,
+    //   link: "https://www.whatsapp.com",
+    // },
   ];
   const [navToggle, setNavToggle] = useState(false);
   const toggleVariants = {

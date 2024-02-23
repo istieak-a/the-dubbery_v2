@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <main className="container ">
+    <main>
       <section className="section_1 flex flex-col items-center gap-3 py-8 text-white">
         <h2 className="text-4xl font-bold">Privacy Policy</h2>
         <p>

@@ -4,30 +4,30 @@ import logo from "../../assets/logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const socialMedia = [
     {
       name: "Facebook",
       icon: <FaFacebook />,
-      link: "https://www.facebook.com",
+      link: "https://www.facebook.com/theduubery",
     },
     {
       name: "Twitter",
       icon: <FaXTwitter />,
-      link: "https://www.twitter.com",
+      link: "https://www.twitter.com/theduubery",
     },
     {
       name: "Instagram",
       icon: <FaInstagram />,
-      link: "https://www.instagram.com",
+      link: "https://www.instagram.com/theduubery",
     },
-    {
-      name: "Whatsapp",
-      icon: <FaWhatsapp />,
-      link: "https://www.whatsapp.com",
-    },
+    // {
+    //   name: "Whatsapp",
+    //   icon: <FaWhatsapp />,
+    //   link: "https://www.whatsapp.com",
+    // },
   ];
   const footerLinks = [
     {
